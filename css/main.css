@@ -364,3 +364,39 @@ html {
 .contact-socials i {
   margin-right: 12px;
 }
+
+
+@media (max-width: 568px) {
+
+  .header-title {
+    font-size: 48px;
+  }
+
+  .header-desc {
+    font-size: 23px;
+    text-align: center;
+  }
+
+  .navbar-brand {
+    font-size: 28px;
+  }
+
+  .navbar-brand img {
+    display: none;
+  }
+
+  .card-photo {
+    min-height: 220px;
+    height: 220px;
+  }
+
+  .about-button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 569px) {
+  .card-photo {
+    width: 100%;
+  }
+}
