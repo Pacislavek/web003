@@ -59,6 +59,10 @@ p,
   font-family: var(--font-accent);
 }
 
+*:focus {
+  outline: none;
+}
+
 /* NAVBAR */
 .button-to-top {
   display: block;
@@ -164,9 +168,7 @@ p,
 
 /* ABOUT */
 
-#about {
-
-}
+#about {}
 
 .about-button {
   color: var(--text-b);
@@ -207,7 +209,7 @@ p,
 }
 
 .card-text-wrapper {
- padding: 0 4rem;
+  padding: 0 4rem;
 }
 
 /* GALLERY */
@@ -278,4 +280,83 @@ p,
   .column img {
     filter: grayscale(0) brightness(1);
   }
+}
+
+/* CONTACT */
+
+#contact {
+  padding: 3rem 0;
+  min-height: 50vh;
+  background-color: #202020;
+  position: relative;
+  width: 100%;
+}
+
+#contact:before {
+  content: '';
+  position: absolute;
+  right: 110px;
+  bottom: 0;
+  width: 88%;
+  height: 88%;
+  background-image: url(../media/dancing-skeleton.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  transform: scaleX(-1);
+}
+
+.contact-information-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100%;
+}
+
+.contact-information {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.title-contact {
+  font-size: 3.3rem;
+  font-family: var(--font-accent);
+}
+
+.contact-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: white;
+  letter-spacing: 1.4;
+}
+
+.contact-desc {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  color: white;
+  letter-spacing: 1;
+}
+
+.contact-icon {
+  width: 30px;
+  height: 30px;
+  align-self: flex-start;
+  margin-right: 18px;
+  filter: invert(100%);
+}
+
+.contact-socials {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 44px;
+}
+
+.contact-socials i {
+  margin-right: 12px;
 }
