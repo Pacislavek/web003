@@ -162,14 +162,13 @@ p,
   color: #303030;
 }
 
-/* OFFER */
+/* ABOUT */
 
-#offer {
-  min-height: 80vh;
+#about {
 
 }
 
-.offer-button {
+.about-button {
   color: var(--text-b);
   background: transparent;
   padding: 8px 24px;
@@ -181,7 +180,32 @@ p,
   transition: all 0.3s ease-in;
 }
 
-.offer-button:hover {
+.about-button:hover {
   background: var(--text-b);
   color: #fefefe;
+}
+
+/* OFFER */
+
+.card-offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: aliceblue;
+  min-height: 350px;
+}
+
+.card-photo {
+  min-height: 350px;
+  max-height: 350px;
+}
+
+.icon {
+  max-width: 100px;
+}
+
+.card-text-wrapper {
+ padding: 0 4rem;
 }
